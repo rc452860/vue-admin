@@ -162,7 +162,7 @@
 						width: 40px;
 						height: 40px;
 						border-radius: 20px;
-						margin: 10px 0px 10px 10px;
+						margin: 10px 0 10px 10px;
 						float: right;
 					}
 				}
@@ -173,9 +173,8 @@
 				font-size: 22px;
 				padding-left:20px;
 				padding-right:20px;
-				border-color: rgba(238,241,146,0.3);
-				border-right-width: 1px;
-				border-right-style: solid;
+				border-color: rgba(238, 241, 146, 0.3);
+				border-right: 1px solid;
 				img {
 					width: 40px;
 					float: left;
@@ -192,7 +191,7 @@
 				width:60px
 			}
 			.tools{
-				padding: 0px 23px;
+				padding: 0 23px;
 				width:14px;
 				height: 60px;
 				line-height: 60px;
@@ -204,7 +203,7 @@
 			// background: #324057;
 			position: absolute;
 			top: 60px;
-			bottom: 0px;
+			bottom: 0;
 			overflow: hidden;
 			aside {
 				flex:0 0 230px;
@@ -222,7 +221,7 @@
 					}
 					.submenu{
 						position:absolute;
-						top:0px;
+						top:0;
 						left:60px;
 						z-index:99999;
 						height:auto;

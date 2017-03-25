@@ -1,14 +1,14 @@
-import Login from './views/Login.vue'
-import NotFound from './views/404.vue'
-import Home from './views/Home.vue'
-import Main from './views/Main.vue'
-import Table from './views/nav1/Table.vue'
-import Form from './views/nav1/Form.vue'
-import user from './views/nav1/user.vue'
-import Page4 from './views/nav2/Page4.vue'
-import Page5 from './views/nav2/Page5.vue'
-import Page6 from './views/nav3/Page6.vue'
-import echarts from './views/charts/echarts.vue'
+const Login = r => require.ensure([], () => r(require('./views/Login.vue')), 'group-index')
+const NotFound = r => require.ensure([], () => r(require('./views/404.vue')), 'group-index')
+const Home = r => require.ensure([], () => r(require('./views/Home.vue')), 'group-index')
+const Main = r => require.ensure([], () => r(require('./views/Main.vue')), 'group-index')
+const Table = r => require.ensure([], () => r(require('./views/nav1/Table.vue')), 'group-nav1')
+const Form = r => require.ensure([], () => r(require('./views/nav1/Form.vue')), 'group-nav1')
+const User = r => require.ensure([], () => r(require('./views/nav1/User.vue')), 'group-nav1')
+const Page4 = r => require.ensure([], () => r(require('./views/nav2/Page4.vue')), 'group-nav2')
+const Page5 = r => require.ensure([], () => r(require('./views/nav2/Page5.vue')), 'group-nav2')
+const Page6 = r => require.ensure([], () => r(require('./views/nav3/Page6.vue')), 'group-nav3')
+const echarts = r => require.ensure([], () => r(require('./views/charts/echarts.vue')), 'group-charts')
 
 let routes = [
     {
@@ -33,7 +33,7 @@ let routes = [
             { path: '/main', component: Main, name: '主页', hidden: true },
             { path: '/table', component: Table, name: 'Table' },
             { path: '/form', component: Form, name: 'Form' },
-            { path: '/user', component: user, name: '列表' },
+            { path: '/user', component: User, name: '列表' },
         ]
     },
     {
