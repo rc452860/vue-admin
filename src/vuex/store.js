@@ -7,7 +7,7 @@ Vue.use(Vuex)
 
 // 应用初始状态
 const state = {
-    count: 10
+    token:null
 }
 
 // 定义所需的 mutations
@@ -17,6 +17,9 @@ const mutations = {
     },
     DECREMENT(state) {
         state.count--
+    },
+    LOGIN(state,token){
+        state.token = token
     }
 }
 
